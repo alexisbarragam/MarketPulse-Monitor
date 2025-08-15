@@ -1,2 +1,8 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-*
+# Pasta do Ambiente Virtual
+venv/
+
+# Arquivos de cache do Python
+__pycache__/
+
+# Arquivo específico do macOS (bom ter, mesmo no Windows)
+.DS_Store
