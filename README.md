@@ -7,7 +7,7 @@ A real-time financial asset monitoring dashboard built with Python. It fetches a
 
 ## Demo
 
-![MarketPulse.Monitor Demo](demo.gif)
+![MarketPulse.Monitor Demo](MarketPulse.Monitor_demo.gif)
 
 ## Key Features
 
@@ -68,16 +68,23 @@ To run this project locally, follow these steps:
 
 ---
 #### **v4.0**
-- Refactored the initial static script into a real-time, object-oriented application.
-- Implemented a multi-panel dashboard with a custom dark theme and color palette.
-- Added dynamic UI elements, including a scrolling ticker tape and on-plot value labels.
-- Developed a stable layout engine using Matplotlib's Gridspec and manual subplot adjustments to prevent visual artifacts during the animation loop.
+- Implemented a scrolling ticker tape for live price and update status.
 - Optimized the animation engine for cross-platform stability.
+- Performed final layout adjustments for a balanced and polished final look.
 
----
+#### **v3.0**
+- Implemented a major UI overhaul, introducing a professional dark theme with a custom color palette.
+- Added dynamic UI elements: a live clock, watermarks, on-plot value labels, and a styled legend box.
+- Developed a stable layout engine with fixed axes for a smooth animation.
+
+#### **v2.0**
+- Refactored the project to an Object-Oriented structure (`MarketMonitor` class).
+- Implemented real-time chart updates, transforming the tool from static to dynamic.
+- Created a separate version for compatibility with notebook environments (e.g., Google Colab).
+
 #### **v1.0**
 - Initial version of the project.
-- Fetched financial data and generated a single, static chart.
+- Fetched financial data from yfinance and generated a single, static chart.
 ---
 </details>
 
