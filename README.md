@@ -3,19 +3,19 @@
 [![Python Version](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A real-time charting application to monitor key financial assets, built with Python.
+A real-time financial asset monitoring dashboard built with Python. It fetches and plots intraday data for multiple tickers using an object-oriented structure and a custom Matplotlib UI.
 
 ## Demo
 
-![MarketPulse.Monitor Screenshot](MarketPulse_Monitor_Demo.png)
+![MarketPulse.Monitor Demo](demo.gif)
 
 ## Key Features
 
-- Live chart that updates automatically.
-- Clean, dark-themed UI inspired by professional trading platforms.
-- Tracks multiple assets simultaneously in a clear, organized dashboard.
-- Includes a real-time clock and dynamic labels showing the latest price directly on the chart.
-- Y-axis adjusts smoothly to the day's price range for better readability.
+- Automatic data refresh and plot updates via `matplotlib.animation`.
+- Custom dark-themed UI with a scrolling ticker tape for live data.
+- Dynamic on-plot labels and legends displaying the latest asset value.
+- Stable layout engine with fixed axes for a smooth, non-jiggling animation.
+- Object-Oriented design for clean, scalable, and maintainable code.
 
 ## Technologies Used
 
@@ -30,8 +30,8 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/MarketPulse.Monitor.git](https://github.com/SEU-USUARIO/MarketPulse.Monitor.git)
-    cd MarketPulse.Monitor
+    git clone [https://github.com/SEU-USUARIO/MarketPulse-Monitor.git](https://github.com/SEU-USUARIO/MarketPulse-Monitor.git)
+    cd MarketPulse-Monitor
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -58,7 +58,7 @@ To run this project locally, follow these steps:
         ```
     * On Windows:
         ```bash
-        python src\monitor.py
+        python src/monitor.py
         ```
 
 <br>
@@ -67,27 +67,17 @@ To run this project locally, follow these steps:
 <summary><h3>Project Evolution / Evolução do Projeto</h3></summary>
 
 ---
-#### **v3.3**
-- Added a dynamic value label that follows the plot line.
-- Implemented stable Y-axis limits that adjust to the day's price range.
-- Added a subtle watermark of the asset's name to each chart.
-- Moved the real-time clock to the top-right corner and set it to 12-hour (AM/PM) format.
-- Re-added the static legend box for constant reference.
+#### **v4.0**
+- Refactored the initial static script into a real-time, object-oriented application.
+- Implemented a multi-panel dashboard with a custom dark theme and color palette.
+- Added dynamic UI elements, including a scrolling ticker tape and on-plot value labels.
+- Developed a stable layout engine using Matplotlib's Gridspec and manual subplot adjustments to prevent visual artifacts during the animation loop.
+- Optimized the animation engine for cross-platform stability.
 
-#### **v3.0**
-- Implemented a major visual overhaul with a new professional dark theme.
-- Added a real-time clock, updating every second, as a live indicator.
-- Refined code with type hinting and more concise comments.
-
-#### **v2.0**
-- Rebuilt the project's structure using an Object-Oriented approach.
-- Implemented real-time chart updates, transforming the tool from static to dynamic.
-- Created a separate version for compatibility with notebook environments (like Google Colab).
-
+---
 #### **v1.0**
 - Initial version of the project.
 - Fetched financial data and generated a single, static chart.
-
 ---
 </details>
 
