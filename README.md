@@ -7,7 +7,7 @@ A real-time financial asset monitoring dashboard built with Python. It fetches a
 
 ## Demo
 
-![MarketPulse.Monitor Demo](MarketPulse.Monitor_demo.gif)
+![MarketPulse.Monitor Demo](MarketPulse.Monitor_Demo.gif)
 
 ## Key Features
 
